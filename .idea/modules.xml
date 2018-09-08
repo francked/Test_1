@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Test_1.iml" filepath="$PROJECT_DIR$/Test_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycakkback/mycakkback.iml" filepath="$PROJECT_DIR$/mycakkback/mycakkback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycalendar/mycalendar.iml" filepath="$PROJECT_DIR$/mycalendar/mycalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mydatabase/mydatabase.iml" filepath="$PROJECT_DIR$/mydatabase/mydatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myeventbus/myeventbus.iml" filepath="$PROJECT_DIR$/myeventbus/myeventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myhandler/myhandler.iml" filepath="$PROJECT_DIR$/myhandler/myhandler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myinterceptor/myinterceptor.iml" filepath="$PROJECT_DIR$/myinterceptor/myinterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mymvp/mymvp.iml" filepath="$PROJECT_DIR$/mymvp/mymvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysnackbar/mysnackbar.iml" filepath="$PROJECT_DIR$/mysnackbar/mysnackbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myswpie/myswpie.iml" filepath="$PROJECT_DIR$/myswpie/myswpie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mytablayout/mytablayout.iml" filepath="$PROJECT_DIR$/mytablayout/mytablayout.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/mycakkback" />
+            <option value="$PROJECT_DIR$/mycalendar" />
+            <option value="$PROJECT_DIR$/mydatabase" />
+            <option value="$PROJECT_DIR$/myeventbus" />
+            <option value="$PROJECT_DIR$/myhandler" />
+            <option value="$PROJECT_DIR$/myinterceptor" />
+            <option value="$PROJECT_DIR$/mymvp" />
+            <option value="$PROJECT_DIR$/mysnackbar" />
+            <option value="$PROJECT_DIR$/myswpie" />
+            <option value="$PROJECT_DIR$/mytablayout" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

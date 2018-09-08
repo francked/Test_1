@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mytablayout.searchwenjian.SearchWenJianActivity">
+
+
+    <Button
+        android:id="@+id/search_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Search"/>
+
+    <Button
+        android:layout_below="@id/search_bt"
+        android:id="@+id/search_all_file_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找所有文件"/>
+
+    <Button
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@id/search_bt"
+        android:layout_below="@id/search_bt"
+        android:id="@+id/showFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件目录"/>
+
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/search_bt" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/search_all_file_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/content"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':mysnackbar', ':mytablayout', ':mydatabase', ':mymvp', ':myinterceptor', ':myswpie', ':myeventbus', ':mycakkback', ':myhandler', ':mycalendar'

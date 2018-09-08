@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+
+
+Properties properties = new Properties();
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        applicationId "com.example.mymvp"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "GANK_SERVICE", '"http://gank.io/api/"'
+        buildConfigField "String", "HTTP_GANK", '"http://gank.io/"'
+        buildConfigField "String", "GITHUB_SERVICE", '"https://api.github.com/"'
+        buildConfigField "String", "READING_SERVICE", '"http://gank.io/xiandu/"'
+        //使用 fir.im 做版本管理服务器
+        buildConfigField "String", "VMS", '"http://api.fir.im/"'
+        buildConfigField 'String', 'APPID', /"${properties.getProperty('APPID', '')}"/
+        buildConfigField 'String', 'APITOKEN', /"${properties.getProperty('APITOKEN', '')}"/
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.example.mymvp.login.greendao'
+        targetGenDir 'src/main/java'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'org.greenrobot:greendao:3.1.0'
+    implementation 'org.greenrobot:greendao-generator:3.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+
+}

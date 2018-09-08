@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyTabLayout</string>
+    <string name="scale_down_show_behavior_1">com.example.mytablayout.FooterBehavior</string>
+    <string name="scale_down_show_behavior_2">com.example.mytablayout.FooterBehaviorAppBar</string>
+</resources>
